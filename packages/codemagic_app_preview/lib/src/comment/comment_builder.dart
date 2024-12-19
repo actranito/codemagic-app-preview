@@ -1,4 +1,5 @@
 import 'dart:math';
+import 'dart:io';
 
 import 'package:codemagic_app_preview/src/builds/build.dart';
 import 'package:codemagic_app_preview/src/builds/build_platform.dart';
@@ -107,6 +108,7 @@ class CommentBuilder {
       }
     }
 
+    stdout.writeln('$table');
     return '$table';
   }
 
